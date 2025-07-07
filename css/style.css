@@ -1,0 +1,421 @@
+/* Colors Used:
+Primary Color (Navy Blue): #072853
+Highlight Color (Primary but Lighter): #1c56a1
+Hyperlink Color (white): #ffffff
+Hyperlink Active and Hover Color: #F4B1FF
+Hyperlink Visited Color (white): #ffffff
+Border Radius for all square/rectangle elements: 10%
+*/
+
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: "garet";
+  src:
+       url('/fonts/garet/Garet-Book.otf') format('opentype'),
+       url('/fonts/garet/Garet-Book.ttf') format('truetype'),
+       url('/fonts/garet/Garet-Book.woff') format('woff'),
+       url('/fonts/garet/Garet-Book.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: "garet";
+  src: url('/fonts/garet/Garet-Heavy.otf') format('opentype'),
+       url('/fonts/garet/Garet-Heavy.ttf') format('truetype'),
+       url('/fonts/garet/Garet-Heavy.woff') format('woff'),
+       url('/fonts/garet/Garet-Heavy.woff2') format('woff2');
+  font-weight: 850;
+  font-style: normal;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+
+video {
+  border-radius: 10%;
+  margin: 15px 10px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'garet', sans-serif;
+  font-size: 14px; 
+  font-weight: 400; /* Sets the font weight to 300 */
+  line-height: 1.2; /* Sets the line-height to 1.2 * the font-size */
+  color: #4a4a4a;
+}
+
+p {
+  font-family: "garet", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  line-height: 1.4;
+  margin: 25px 0;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none; /* No underlining */
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #F4B1FF;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+
+
+/*These are for the Nav*/
+.logo{
+  display: inline;
+  min-width: 80px;
+  max-width: 120px;
+}
+header {
+  position: relative;
+  background-color: #072853;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)  ; 
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)  ; 
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)  ; 
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav > ul {
+  display: flex; /*display list items horizontally*/
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul > li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav > ul > li > a { /*revise these colors here by adding a color: property*/
+  padding: 0 15px;
+  display: block;
+}
+nav > ul > li > a:hover {
+  text-decoration: underline;
+  color: #F4B1FF;
+}
+nav > ul > li > a:active {
+  text-decoration: underline;
+  text-emphasis: bold;
+  color: #F4B1FF;
+}
+nav > ul > li > a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.button { /*THIS NEEDS TO GO TOWARDS OR AT THE END*/
+  font-weight: 400;
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: #072853;
+  color: #ffffff;
+  padding: 11px 20px 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #000000;
+  transition: all .2s ease;
+}
+.button:hover {
+  background-color: #1c56a1;
+  color: #ffffff
+}
+.button:active {
+  background-color: #e9e9e9;
+  color: #000000;
+  text-decoration:underline;
+}
+.button:focus {
+  color: #ffffff;
+  background-color: #1c56a1
+}
+.button:visited {
+  color: #ffffff;
+}
+.button-wrapper {
+  display: block;
+  width: 90%; 
+  max-width: 250px;
+  padding: 25px 0;
+  margin: 0 auto; /* Center the image wrapper on mobile */
+  margin-bottom: 0;
+  min-height: none; /* Remove if not needed */
+}
+.primarybutton { /*Extra selector specifically for the home page*/
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  background-color: #072853;
+  color: #ffffff;
+  padding: 11px 20px 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #000000;
+  transition: all .2s ease;
+}
+.secondarybutton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #072853;
+  margin-top: 25px;
+  padding: 11px 20px 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #072853;
+  transition: all .2s ease;
+}
+#hero .secondarybutton:visited {
+  color: #072853;
+}
+.buttonwork { /*Extra Selector Specifically for Buttons under Work Imgs*/
+ display: inline-flex; /* Changed from flex to inline-flex to better control its width */
+    justify-content: center;
+    align-items: center; /* Vertically align content within the button */
+    font-weight: 400;
+    background-color: #072853;
+    color: #ffffff;
+    padding: 11px 20px 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    transition: all .2s ease;
+    min-height: none;
+    margin: 0 auto; /* Center the button */
+    max-width: 300px; /* Limit its width on mobile if it gets too wide */
+    width: 100%; /* Make it take full width up to max-width on mobile */
+}
+
+
+
+.button.contact { /*These are for the Footer*/
+  background-color:transparent;
+  color:#000000;
+  transition: .2s background-color;
+  border: 0;
+  padding: 5px 5px 5px 5px;
+}
+.button.contact:hover {
+  background-color: #e9e9e9;
+  text-decoration: underline;
+}
+.button.contact:active {
+  background-color: #F4B1FF;
+  text-decoration: underline;
+}
+footer > .container > .center > ul {
+  display: flex; /*display list items horizontally*/
+  justify-content: center;
+  align-items: center;
+}
+footer > .container > .center > ul > li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer > .container > .center > ul > li > a {
+  padding: 15px 15px;
+  display: block;
+}
+
+.contactbutton { /*These are for the Contact Me page only*/
+  margin-bottom: 20px;
+}
+.button.contactme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  min-height: 50px;
+  max-width: 280px;
+  background-color:transparent;
+  color:#000000;
+  transition: .2s;
+  border-radius: 15px;
+  border: 2px solid #000000;
+}
+.button.contactme > svg {
+  margin-right: 10px;
+}
+.button.contactme:hover {
+  background-color: #e9e9e9;
+  text-decoration: underline;
+  border-radius: 15px;
+  border: 2px solid #000000;
+}
+.button.contactme:active {
+  background-color: #F4B1FF;
+  text-decoration: underline;
+  border-radius: 15px;
+  border: 2px solid #000000;
+}
+
+/*Layout Styling*/
+
+.container {
+  padding: 0 15px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.centertext { /*For Text as it becomes a block instead of flex*/
+  display: block;
+  text-align: center;
+}
+.workimg, .workimgbottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  padding: 25px 0;
+  margin: 0 auto;
+  min-height: none;
+}
+.workimg {
+  border-bottom: 1px solid #072853;
+}
+#work .contentrow {
+  padding-bottom: 25px; border-bottom: 1px solid #072853; 
+}
+.images-container {
+  display: block;
+  margin-bottom: 25px;
+}
+.work-category-section {
+    padding-bottom: 25px; /* Add padding at the bottom of each section */
+    border-bottom: 1px solid #072853; /* Separator between sections on mobile */
+    margin-bottom: 25px; /* Space between sections */
+    text-align: center; /* Center the H1 and button by default */
+}
+.work-category-section:last-of-type {
+    border-bottom: none; /* No border on the last section */
+    margin-bottom: 0; /* No margin below the last section */
+}
+
+/* Media Queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+ .images-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: flex-start; /* Align images to the top within their row */
+        width: 100%;
+        margin-bottom: 35px; /* Adjust spacing as needed for desktop layout */
+    }
+
+  .workimg, .workimgbottom {
+        width: calc(33.33% - 20px); /* This makes them take roughly 1/3 of the parent width, minus spacing */
+        max-width: 300px; /* Allow images to grow a bit larger on desktop, adjust as desired */
+        margin: 10px;
+        padding: 0;
+        border-bottom: none;
+    }
+    
+/* Ensure the actual image inside workimg scales correctly */
+  .workimg img, .workimgbottom img {
+        max-width: 100%; /* Make sure the image doesn't overflow its own parent .workimg */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+  .buttonwork {
+        width: 80%;
+        max-width: 400px; /* Allow the button to be a bit wider on desktop */
+        margin: 0 auto;
+    }
+  
+  .work-category-section {
+        padding-bottom: 50px;
+        border-bottom: 2px solid #072853;
+        margin-bottom: 50px; 
+    }
+
+  .work-category-section:last-of-type {
+        border-bottom: none; /* No border on the last one */
+        margin-bottom: 0;
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
