@@ -163,7 +163,7 @@ nav > ul > li > a:visited {
 
 
 
-.button { /*THIS NEEDS TO GO TOWARDS OR AT THE END*/
+.button {
   font-weight: 400;
   display: inline-flex;
   justify-content: space-between;
@@ -314,6 +314,10 @@ footer > .container > .center > ul > li > a {
 
 .container {
   padding: 0 15px;
+}
+.container-commissions {
+  padding: 0 32px;
+  border-bottom: 1px solid #072853;
 }
 .center {
   display: flex;
