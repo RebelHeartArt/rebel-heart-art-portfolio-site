@@ -353,6 +353,34 @@ footer > .container > .center > ul > li > a {
     margin-bottom: 0; /* No margin below the last section */
 }
 
+/* About Page Specific Styles */
+.about-content-wrapper {
+  display: block; /* Ensures it acts as a regular block container */
+    padding-bottom: 25px; /* Add padding consistent with other sections if desired */
+    border-bottom: 1px solid #072853; /* Optional separator */
+    margin-bottom: 25px;
+    text-align: center; /* Center the image and text blocks on mobile */
+}
+.aboutimg-container {
+    width: 100%; /* Take full width on mobile */
+    max-width: 200px; /* Limit image size on mobile, adjust as needed */
+    margin: 0 auto 20px auto; /* Center image horizontally and add bottom margin on mobile */
+    border-radius: 10%; /* Apply border-radius to the container if image inside doesn't have it */
+    overflow: hidden; /* Ensures border-radius crops the image if it's larger */
+}
+.aboutimg-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+}
+/* Clearfix for floating elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Media Queries */
 
 /* ==============================
@@ -398,7 +426,24 @@ Medium devices (640px and larger)
         border-bottom: none; /* No border on the last one */
         margin-bottom: 0;
     }
-}
+
+    /* ABOUT PAGE - Medium devices and up */
+    .about-content-wrapper {
+        display: block; /* Back to block for floating */
+        text-align: left;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #072853; /* Adjust border for desktop */
+        margin-bottom: 50px;
+    }
+
+    .aboutimg-container {
+        float: left;
+        width: 30%;
+        max-width: 250px;
+        margin: 0 40px 20px 20px;
+        /* Remove margin: 0 auto; from here for desktop */
+    }
+
 
 /* ==============================
 Large devices (1024px or larger)
@@ -418,4 +463,5 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+}
 }
