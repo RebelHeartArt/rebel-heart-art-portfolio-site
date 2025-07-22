@@ -355,17 +355,18 @@ footer > .container > .center > ul > li > a {
 
 /* About Page Specific Styles */
 .about-content-wrapper {
-  display: block; /* Ensures it acts as a regular block container */
-    padding-bottom: 25px; /* Add padding consistent with other sections if desired */
-    border-bottom: 1px solid #072853; /* Optional separator */
+  display: block; 
+    padding-bottom: 25px;
+    border-bottom: 1px solid #072853;
     margin-bottom: 25px;
-    text-align: center; /* Center the image and text blocks on mobile */
+    text-align: left;
 }
 .aboutimg-container {
-    width: 100%; /* Take full width on mobile */
-    max-width: 200px; /* Limit image size on mobile, adjust as needed */
-    margin: 0 auto 20px auto; /* Center image horizontally and add bottom margin on mobile */
-    border-radius: 10%; /* Apply border-radius to the container if image inside doesn't have it */
+    display: block;
+    float: left;
+    max-width: 125px;
+    margin: 0 16px 24px 8px;
+    border-radius: 10%;
     overflow: hidden; /* Ensures border-radius crops the image if it's larger */
 }
 .aboutimg-container img {
