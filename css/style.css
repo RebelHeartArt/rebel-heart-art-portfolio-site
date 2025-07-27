@@ -255,8 +255,8 @@ nav > ul > li > a:visited {
 }
 
 
-
-.button.contact { /*These are for the Footer*/
+ /*These are for the Footer*/
+.button.contact {
   background-color:transparent;
   color:#000000;
   transition: .2s background-color;
@@ -284,6 +284,13 @@ footer > .container > .center > ul > li {
 footer > .container > .center > ul > li > a {
   padding: 15px 15px;
   display: block;
+}
+.footerlink {
+  color: #4a4a4a;
+  text-decoration: underline;
+}
+.footerlink:hover {
+  color: #072853;
 }
 
 .contactbutton { /*These are for the Contact Me page only*/
