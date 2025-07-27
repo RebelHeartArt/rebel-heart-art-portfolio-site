@@ -282,17 +282,19 @@ footer > .container > .center > ul > li > a {
   margin-bottom: 20px;
 }
 .button.contactme {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   min-width: 280px;
   min-height: 50px;
-  max-width: 280px;
+  max-width: 300px;
+  width: 100%;
   background-color:transparent;
   color:#000000;
   transition: .2s;
   border-radius: 15px;
   border: 2px solid #000000;
+  margin: 0 auto; /* Center the button */
 }
 .button.contactme > svg {
   margin-right: 10px;
@@ -355,6 +357,11 @@ footer > .container > .center > ul > li > a {
 .work-category-section:last-of-type {
     border-bottom: none; /* No border on the last section */
     margin-bottom: 0; /* No margin below the last section */
+}
+.contact-category-section {
+    padding-bottom: 300px;
+    margin-bottom: 25px; /* Space between sections */
+    text-align: center; /* Center the H1 and Buttons*/
 }
 
 /* About Page Specific Styles */
@@ -449,6 +456,10 @@ Medium devices (640px and larger)
         /* Remove margin: 0 auto; from here for desktop */
     }
 
+    /* Contact Me Page*/
+    .button.contactme {
+      max-width: 400px;
+    }
 
 /* ==============================
 Large devices (1024px or larger)
