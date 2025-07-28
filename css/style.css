@@ -487,6 +487,7 @@ Medium devices (640px and larger)
         height: auto; /* Maintain aspect ratio */
         margin: 0; /* **Crucial:** Remove the default margin on desktop that might cause issues */
         border-radius: 10%;
+        padding: 25px 0;
     }
     .video-section .video, 
     .video-section .center {
@@ -499,7 +500,7 @@ Medium devices (640px and larger)
 
     /* ABOUT PAGE - Medium devices and up */
     .about-content-wrapper {
-        display: block; /* Back to block for floating */
+        display: block;
         text-align: left;
         padding-bottom: 50px;
         border-bottom: 2px solid #072853; /* Adjust border for desktop */
@@ -511,7 +512,6 @@ Medium devices (640px and larger)
         width: 30%;
         max-width: 250px;
         margin: 0 40px 20px 20px;
-        /* Remove margin: 0 auto; from here for desktop */
     }
 
     /* Contact Me Page*/
@@ -520,9 +520,9 @@ Medium devices (640px and larger)
     }
 
 /* ==============================
-Large devices (1024px or larger)
+Large devices (850px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 850px) {
 
 
 }
