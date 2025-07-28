@@ -291,6 +291,9 @@ footer > .container > .center > ul > li > a {
 .footerlink:hover {
   color: #072853;
 }
+.footerlink:visited {
+  color: #4a4a4a;
+}
 
 .contactbutton { /*These are for the Contact Me page only*/
   margin-bottom: 20px;
