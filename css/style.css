@@ -197,7 +197,6 @@ nav > ul > li > a:visited {
   padding: 25px 0;
   margin: 0 auto; /* Center the image wrapper on mobile */
   margin-bottom: 0;
-  min-height: none; /* Remove if not needed */
 }
 .primarybutton { /*Extra selector specifically for the home page*/
   display: flex;
@@ -442,7 +441,9 @@ Medium devices (640px and larger)
         max-width: 400px; /* Allow the button to be a bit wider on desktop */
         margin: 0 auto;
     }
-  
+  .primarybutton {
+        margin-bottom: 25px;
+  }
   .work-category-section {
         padding-bottom: 50px;
         border-bottom: 2px solid #072853;
@@ -452,6 +453,45 @@ Medium devices (640px and larger)
   .work-category-section:last-of-type {
         border-bottom: none; /* No border on the last one */
         margin-bottom: 0;
+    }
+  #hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid #072853;
+        margin-bottom: 50px;
+        
+        /* Important: Remove any explicit horizontal padding on #hero itself if you want its children
+           to fill the full width inside the .container. The .container already has padding. */
+    }
+    .hero-section {
+        width: 60%;
+        text-align: center;
+    }
+    .video-section {
+        width: 35%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button-wrapper {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    video {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* **Crucial:** Remove the default margin on desktop that might cause issues */
+        border-radius: 10%;
+    }
+    .video-section .video, 
+    .video-section .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* ABOUT PAGE - Medium devices and up */
