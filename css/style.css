@@ -338,9 +338,35 @@ footer > .container > .center > ul > li > a {
   padding: 0 32px;
   border-bottom: 1px solid #072853;
 }
+.featured-section {
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #072853
+}
+.featured-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .center {
   display: flex;
   justify-content: center;
+}
+.left {
+  display: block;
+  float: left;
+  width: 35%;
+}
+.right {
+  display: block;
+  float: right;
+  width: 35%;
+}
+.workstext {
+  display: flex;
+  
+  width: 60%;
 }
 .centertext { /*For Text as it becomes a block instead of flex*/
   display: block;
