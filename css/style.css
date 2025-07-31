@@ -365,7 +365,7 @@ footer > .container > .center > ul > li > a {
 }
 .workstext {
   display: flex;
-  
+  padding-left: 15px;
   width: 60%;
 }
 .centertext { /*For Text as it becomes a block instead of flex*/
