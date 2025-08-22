@@ -163,16 +163,41 @@ nav > ul > li > a:visited {
 .navtoggle li:not(:last-child) {
     display: none;
 }
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+.navtoggle li:last-child {
+    width: 100%; /* Make the icon take full width for easier tapping */
+    text-align: right;
 }
-.navtoggle li .icon {
-  font-size: 25px;
+.navtoggle.responsive {
+    position: relative;
 }
-.navtoggle.responsive li  {
-  display: block;
+.navtoggle.responsive nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-
+.navtoggle.responsive nav > ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.navtoggle.responsive li:last-child {
+    position: absolute; /* Take the hamburger icon out of the flow */
+    right: 0;
+    top: 0;
+    width: auto; /* Let the icon size itself naturally */
+}
+.navtoggle.responsive li a {
+    width: 100%; /* Ensure the clickable area fills the space */
+    padding: 15px 0; /* Increase padding for a larger button-like area */
+}
 
 .button {
   font-weight: 400;
@@ -455,7 +480,8 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) { /* CRUCIAL : THIS NEEDS TO BE FIXED FOR HEADER */
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+  display: flex;
+
 }
 .navtoggle li:last-child {
   display: none;
