@@ -623,6 +623,14 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
+/*Contact Page*/ 
+.contact-category-section {
+    padding-bottom: 200px;
+}
+.contactbutton {
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
 
 /* ==============================
 Extra-large devices (1920px or larger)
