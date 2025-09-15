@@ -379,10 +379,6 @@ footer > .container > .center > ul > li > a {
   border-bottom: 1px solid #072853;
 }
 .featured-section {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
   width: 100%;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -401,20 +397,18 @@ footer > .container > .center > ul > li > a {
   display: block;
   float: left;
   width: 35%;
-}
-.leftwrap {
-  display: flex;
-  max-width: 35%;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 .right {
   display: block;
   float: right;
   width: 35%;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 .workstext {
-  display: flex;
-  padding-left: 15px;
-  width: 60%;
+  width: auto;
 }
 .centertext { /*For Text as it becomes a block instead of flex*/
   display: block;
