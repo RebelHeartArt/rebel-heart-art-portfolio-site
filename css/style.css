@@ -106,7 +106,10 @@ a:focus {
   color: #F4B1FF;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
-
+p > a{
+  color: #072853;
+  text-decoration: underline;
+}
 
 
 /*These are for the Nav*/
