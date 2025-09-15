@@ -379,6 +379,10 @@ footer > .container > .center > ul > li > a {
   border-bottom: 1px solid #072853;
 }
 .featured-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -397,6 +401,10 @@ footer > .container > .center > ul > li > a {
   display: block;
   float: left;
   width: 35%;
+}
+.leftwrap {
+  display: flex;
+  max-width: 35%;
 }
 .right {
   display: block;
